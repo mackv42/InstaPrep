@@ -1,20 +1,42 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>InstaPrep.Server</PageTitle>
+<MudThemeProvider IsDarkMode="@_isDarkMode" />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
-<div class="page">
-    <div class="sidebar">
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudSpacer />
+        <MudIconButton Icon="@_darkModeIcon" Color="Color.Inherit" Target="_blank" OnClick="@((e) => DarkModeToggle())" />
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h6">InstaPrep</MudText>
+        </MudDrawerHeader>
         <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="my-8">
             @Body
-        </article>
-    </main>
-</div>
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
 
+@code {
+    bool _drawerOpen = true;
+    bool _isDarkMode = true;
+
+    string _darkModeIcon => (_isDarkMode) ? Icons.Outlined.DarkMode : Icons.Filled.DarkMode;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    void DarkModeToggle()
+    {
+        _isDarkMode = !_isDarkMode;
+    }
+}

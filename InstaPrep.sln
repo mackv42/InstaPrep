@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1700.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPrep.Server", "InstaPrep.Server.csproj", "{99F306B4-AB37-4A9D-9FDD-E4894553861C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPrep", "InstaPrep.csproj", "{271D37DC-D502-493E-BD92-0591F3A87666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99F306B4-AB37-4A9D-9FDD-E4894553861C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99F306B4-AB37-4A9D-9FDD-E4894553861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99F306B4-AB37-4A9D-9FDD-E4894553861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99F306B4-AB37-4A9D-9FDD-E4894553861C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271D37DC-D502-493E-BD92-0591F3A87666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271D37DC-D502-493E-BD92-0591F3A87666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271D37DC-D502-493E-BD92-0591F3A87666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271D37DC-D502-493E-BD92-0591F3A87666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1BCA5340-1A00-49E2-8087-1D8B9909DC31}
+		SolutionGuid = {BD44C704-5151-4BF9-BE12-A16F9B476102}
 	EndGlobalSection
 EndGlobal
