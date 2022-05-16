@@ -45,7 +45,7 @@
 
                             @*--- Open Button ----*@
                             <MudItem xs="12">
-                                <MudButton Color="Color.Secondary" Variant="Variant.Filled" FullWidth="true">Open Recipe</MudButton>
+                                <MudButton Color="Color.Secondary" Variant="Variant.Filled" Href="/recipedetail/5" FullWidth="true" OnClick="@((args) => OpenRecipe(args))">Open Recipe</MudButton>
                             </MudItem>
                         </MudGrid>
                     </MudItem>
@@ -68,7 +68,11 @@
 
     private List<Recipe> AllRecipes { get; set; } = new List<Recipe>();
 
+    private void OpenRecipe(MouseEventArgs eventArgs) 
+    {
 
+
+    }
     protected override void OnInitialized()
     {
         base.OnInitialized();
