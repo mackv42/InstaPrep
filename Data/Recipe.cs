@@ -10,6 +10,8 @@ namespace InstaPrep.Data
 		public string Duration { get; set; } = string.Empty;
 		public string Effort { get; set; } = string.Empty;
 
+		public List<Ingredients> IngredientsList = new List<Ingredients>();
+
 		public Recipe()
 		{
 			Id = Guid.NewGuid().ToString();
