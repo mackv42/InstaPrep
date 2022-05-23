@@ -1,4 +1,5 @@
 ﻿@using InstaPrep.Data
+@inject NavigationManager NavManager
 
 @page "/"
 
@@ -6,10 +7,10 @@
 
 <MudText Typo="Typo.h4" Class="mb-6">My Recipes</MudText>
 
-    <MudGrid Spacing="4" Justify="Justify.FlexStart">
-        @*-- Card Template --*@
-        @foreach (var recipe in AllRecipes)
-        {
+<MudGrid Spacing="4" Justify="Justify.FlexStart">
+    @*-- Card Template --*@
+    @foreach (var recipe in AllRecipes)
+    {
         <MudItem sm="12" md="6" lg="4" xl="3" xxl="2">
             <MudPaper Elevation="4">
                 <MudGrid Class="pa-4">
@@ -24,7 +25,7 @@
                     <MudItem xs="8">
                         <MudGrid Spacing="1">
                             @*--- Title ----*@
-                            <MudItem xs="12" >
+                            <MudItem xs="12">
                                 <MudText Style="font-weight:600">@recipe.Title</MudText>
                             </MudItem>
 
@@ -45,22 +46,22 @@
 
                             @*--- Open Button ----*@
                             <MudItem xs="12">
-                                <MudButton Color="Color.Secondary" Variant="Variant.Filled" FullWidth="true">Open Recipe</MudButton>
+                                <MudButton Color="Color.Secondary" OnClick="@((args) => OpenRecipe(recipe.Id))" Variant="Variant.Filled" FullWidth="true">Open Recipe</MudButton>
                             </MudItem>
                         </MudGrid>
                     </MudItem>
                 </MudGrid>
-                </MudPaper>
+            </MudPaper>
         </MudItem>
 
-            @*--- Divider ----*@
-            @if (AllRecipes.LastOrDefault()?.Id != recipe.Id)
-            {
-                <MudDivider />
-            }
-
+        @*--- Divider ----*@
+        @if (AllRecipes.LastOrDefault()?.Id != recipe.Id)
+        {
+            <MudDivider />
         }
-    </MudGrid>
+
+    }
+</MudGrid>
 
 
 
@@ -108,6 +109,11 @@
             Effort = "Hard",
             Rating = "2"
         });
+    }
+
+    private void OpenRecipe(string recipeId)
+    {
+        NavManager.NavigateTo("/recipe/" + recipeId);
     }
 
 }

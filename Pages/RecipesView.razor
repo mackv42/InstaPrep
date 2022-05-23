@@ -1,0 +1,17 @@
+﻿@using InstaPrep.Data
+
+@page "/recipe/{RecipeId}"
+
+<PageTitle>Recipe</PageTitle>
+
+<MudText Typo="Typo.h4" GutterBottom="true">RecipeID: @RecipeId</MudText>
+
+
+
+@code{
+
+    [Parameter]
+    public string RecipeId { get; set; } = string.Empty;
+
+
+}
