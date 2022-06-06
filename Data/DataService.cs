@@ -10,7 +10,7 @@ namespace InstaPrep.Data
             new Recipe()
             {
                 ImageUrl = "https://www.simplyrecipes.com/thmb/H4fqk2mwQtlil9fc2FBrUrz8zYU=/648x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2007__03__salmon-moqueca-vertical-a-1600-d79c82bba5fb48c09de050fc0dbbfa6f.jpg",
-                Title = "Brazilian Salmon Stew",
+                Title = "Brazilian Salmon Stew  (Moqueca)",
                 Duration = "1-2 Hours",
                 Effort = "Easy",
                 Rating = "2",
