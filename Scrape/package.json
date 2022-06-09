@@ -1,0 +1,25 @@
+{
+  "name": "scrape",
+  "version": "1.0.0",
+  "description": "Web Scraping script for pulling recipes for Instaprep\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C from the web for instaprep",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackv42/InstaPrep.git"
+  },
+  "author": "Vincent Mackay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mackv42/InstaPrep/issues"
+  },
+  "homepage": "https://github.com/mackv42/InstaPrep#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11",
+    "got": "^12.1.0"
+  }
+}
