@@ -18,15 +18,18 @@ namespace InstaPrep.Data
                 {
                     new Ingredients()
                     {
-                        Title = "Garlic"
+                        Title = "Garlic",
+                        Measure = "4 cloves"
                     },
                     new Ingredients()
                     {
-                        Title = "Lime Juice"
+                        Title = "Lime Juice",
+                        Measure = "2 tbsp"
                     },
                     new Ingredients()
                     {
-                        Title = "Salt"
+                        Title = "Salt",
+                        Measure = "3/4 tsp"
                     }
                 }
             },

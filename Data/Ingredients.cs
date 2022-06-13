@@ -5,6 +5,7 @@ namespace InstaPrep.Data
 	{
 		public string Id { get; set; } = string.Empty;
 		public string Title { get; set; } = string.Empty;
+		public string Measure {  get; set; } = string.Empty;
 
 		public Ingredients()
 		{
